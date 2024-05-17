@@ -1,0 +1,83 @@
+header{
+	background-image: url('../img/XXXL (1).webp');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*Мероприятия*/
+.eventsBackGround_1, .eventsTitle_1, .eventsText_1, .eventsDate_1{
+	opacity: 0; 
+	transition: .5s;
+}
+
+.eventsBlock_1:hover .eventsBackGround_1, .eventsBlock_1:hover .eventsTitle_1,.eventsBlock_1:hover .eventsText_1, .eventsBlock_1:hover .eventsDate_1,
+.eventsBlock_2:hover .eventsBackGround_1, .eventsBlock_2:hover .eventsTitle_1,.eventsBlock_2:hover .eventsText_1, .eventsBlock_2:hover .eventsDate_1,
+.eventsBlock_3:hover .eventsBackGround_1, .eventsBlock_3:hover .eventsTitle_1,.eventsBlock_3:hover .eventsText_1, .eventsBlock_3:hover .eventsDate_1,
+.eventsBlock_4:hover .eventsBackGround_1, .eventsBlock_4:hover .eventsTitle_1,.eventsBlock_4:hover .eventsText_1, .eventsBlock_4:hover .eventsDate_1,
+.eventsBlock_5:hover .eventsBackGround_1, .eventsBlock_5:hover .eventsTitle_1,.eventsBlock_5:hover .eventsText_1, .eventsBlock_5:hover .eventsDate_1{
+	opacity: 1;
+	z-index: 5;
+}
+
+.eventsBlock_1:hover ~ .eventsBlock_2, .eventsBlock_1:hover ~ .eventsBlock_3, .eventsBlock_1:hover ~ .eventsBlock_4, .eventsBlock_1:hover ~ .eventsBlock_5{
+	transition: .5s;
+	opacity: .25;
+}
+.eventsBlock_1:hover ~ .eventsBlock_2{
+	z-index: 4;
+}
+.eventsBlock_1:hover ~ .eventsBlock_3{
+	z-index: 3;
+}
+.eventsBlock_1:hover ~ .eventsBlock_4{
+	z-index: 2;
+}
+.eventsBlock_1:hover ~ .eventsBlock_5{
+	z-index: 1;
+}
+
+.eventsBlock_2:hover ~ .eventsBlock_3, .eventsBlock_2:hover ~ .eventsBlock_4, .eventsBlock_2:hover ~ .eventsBlock_5{
+	transition: .5s;
+	opacity: .25;
+}
+.eventsBlock_2:hover ~ .eventsBlock_3{
+	z-index: 3;
+}
+.eventsBlock_2:hover ~ .eventsBlock_4{
+	z-index: 2;
+}
+.eventsBlock_2:hover ~ .eventsBlock_5{
+	z-index: 1;
+}
+
+.eventsBlock_3:hover ~ .eventsBlock_4, .eventsBlock_3:hover ~ .eventsBlock_5{
+	transition: .5s;
+	opacity: .25;
+}
+.eventsBlock_3:hover ~ .eventsBlock_4{
+	z-index: 2;
+}
+.eventsBlock_3:hover ~ .eventsBlock_5{
+	z-index: 1;
+}
+
+.eventsBlock_4:hover ~ .eventsBlock_5{
+	transition: .5s;
+	opacity: .25;
+	z-index: 1;
+}
+/*Мероприятия*/
+
+/*Фотогаллерея*/
+.photoBack, .photoText{
+	opacity: 0;
+}
+.photo:hover .photoBack, .photo:hover .photoText{
+	opacity: 1;
+}
+/*Фотогаллерея*/
